@@ -1,0 +1,11 @@
+[Unit]
+ Description=night mode switcher
+ After=pulseaudio.service
+
+[Service]
+ User=pi
+ Group=pi
+ ExecStart=/home/pi/scripts/nightmode.sh
+
+[Install]
+ WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+ Description=volume knob monitor
+ After=pulseaudio.service
+
+[Service]
+ User=pi
+ Group=pi
+ ExecStart=/home/pi/scripts/monitor-volume.py
+
+[Install]
+ WantedBy=multi-user.target
